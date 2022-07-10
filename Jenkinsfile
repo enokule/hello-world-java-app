@@ -5,7 +5,9 @@ pipeline {
     dockerImage = ""
   }
 
-  agent any
+  agent {
+        docker { image 'jenkins/inbound-agent:4.11.2-4' }
+    }
 
   stages {
 
