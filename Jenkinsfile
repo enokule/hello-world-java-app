@@ -6,7 +6,7 @@ pipeline {
   }
 
   agent {
-        docker { image 'jenkins/inbound-agent:4.11.2-4' }
+        docker { image 'enokule/jenkins-agent:jenkins-docker' }
     }
 
   stages {
