@@ -5,9 +5,7 @@ pipeline {
     dockerImage = ""
   }
 
-  agent {
-        docker { image 'enokule/jenkins-agent:jenkins-docker' }
-    }
+  agent any
 
   stages {
 
